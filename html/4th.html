@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form - All Elements</title>
+</head>
+<body>
+    <h1>Complete HTML Form</h1>
+
+    <form action="/submit.php">
+        <!-- for or id same rkhte ha label ko form s associiate krnne k liye-->
+        
+        <!-- TEXT INPUT -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" 
+               required minlength="3" maxlength="20" autofocus>
+        <br><br>
+
+        <!-- EMAIL INPUT -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="user@example.com" required>
+        <br><br>
+
+        <!-- PASSWORD INPUT -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" 
+               minlength="8" maxlength="20" required>
+        <br><br>
+
+        <!-- NUMBER INPUT -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" step="1" value="25">
+        <br><br>
+
+        <!-- RANGE INPUT -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="10" value="50">
+        <br><br>
+
+        <!-- DATE INPUT -->
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2025-12-31">
+        <br><br>
+
+        <!-- TIME INPUT -->
+        <label for="meeting">Meeting Time:</label>
+        <input type="time" id="meeting" name="meeting">
+        <br><br>
+
+        <!-- DATETIME-LOCAL INPUT -->
+        <label for="appointment">Appointment:</label>
+        <input type="datetime-local" id="appointment" name="appointment">
+        <br><br>
+
+        <!-- MONTH INPUT -->
+        <label for="month">Select Month:</label>
+        <input type="month" id="month" name="month">
+        <br><br>
+
+        <!-- WEEK INPUT -->
+        <label for="week">Select Week:</label>
+        <input type="week" id="week" name="week">
+        <br><br>
+
+        <!-- COLOR INPUT -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+        <br><br>
+
+        <!-- URL INPUT -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        <br><br>
+
+        <!-- TEL INPUT -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+        <br><br>
+
+        <!-- SEARCH INPUT -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search here...">
+        <br><br>
+
+        <!-- FILE INPUT -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" accept=".jpg,.png,.pdf" multiple>
+        <br><br>
+
+        <!-- RADIO BUTTONS -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- CHECKBOXES -->
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="coding" name="hobbies" value="coding" checked>
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+        <label for="gaming">Gaming</label>
+        <br><br>
+
+        <!-- TEXTAREA -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" 
+                  placeholder="Write your message..." maxlength="500" required></textarea>
+        <br><br>
+
+        <!-- SELECT DROPDOWN -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+
+        <!-- SELECT WITH OPTGROUP -->
+        <label for="course">Course:</label>
+        <select id="course" name="course" size="4" multiple>
+            <optgroup label="Programming">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </optgroup>
+            <optgroup label="Web Development">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <!-- DATALIST -->
+        <label for="browser">Browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+        <br><br>
+
+        <!-- FIELDSET AND LEGEND -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+        </fieldset>
+        <br>
+
+        <!-- HIDDEN INPUT -->
+        <input type="hidden" name="userId" value="12345">
+
+        <!-- READONLY INPUT -->
+        <label for="readonly">Readonly:</label>
+        <input type="text" id="readonly" name="readonly" value="Cannot edit" readonly>
+        <br><br>
+
+        <!-- DISABLED INPUT -->
+        <label for="disabled">Disabled:</label>
+        <input type="text" id="disabled" name="disabled" value="Disabled field" disabled>
+        <br><br>
+
+        <!-- BUTTON TYPES -->
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+        <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+        <br><br>
+
+        <!-- INPUT BUTTONS -->
+        <input type="submit" value="Submit with Input">
+        <input type="reset" value="Reset with Input">
+        <input type="button" value="Button Input" onclick="alert('Input button!')">
+
+    </form>
+
+</body>
+</html>

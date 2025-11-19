@@ -1,0 +1,118 @@
+/*
+box model in css - this has - height ,width ,border ,padding ,margin
+
+jo bhi content ha usa box m visualize kiya ja skta ha jiski height width dono hogi 
+
+-> content k around jo space hogi usa hm pdding khenge aur padding k around border hoga,
+-> ak box aur dusre box k bich m space jo hota ha wo margin ha , do box k bich m 
+
+border m attribute -
+border-width:
+border-style: solid/dashed/dotted/double
+border-color:
+
+border-radius: px or % to round the border , for circle 50%
+shorthand
+border:width style color
+border:2px solid black
+*/
+
+h1{
+    border : 4px solid blue;
+    background-color : pink;
+    height : 400px;
+    width : 400px;
+    text-align: center;
+    border-radius: 20%;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:50px;
+    padding-bottom:25px;
+
+    margin : 50px 25px 25px 25px
+    
+}
+/*
+padding space between content and the border
+padding-left:
+padding-right:
+padding-top: 
+padding-bottom:
+
+shorthand -
+padding : single
+padding : top right bottom left
+ same for margin
+*/
+
+/*
+display property
+
+display: inline/block/inline-block/none
+
+->inline: only space required by element (no margin no padding)
+->block: take full width available
+->inline-block:similar to inline but we can set margin and the padding
+->none: to remove element from document flow
+
+[expllict conversion]
+*display inline m margin padding top aur bootom s set nhio hoti islie hm inline bock dete ha
+
+*display none m elemeny gayab hoo jata ha aur space bhi nhi bchta
+*visiblity: hidden m space reserve rhta ha
+
+
+->>alpha chanel or opacity
+RGBA
+color: rgba(r,g,b,opacity)
+vo color kitna bright ya light dikhega y usse decide hoga
+*/
+
+/*units in css
+relative
+
+% -> size as relative to an elemeunts parent
+mtlb parent ki 100 hA , phir agar child ki 33% likhi ha mtlb 33% of the parennt
+
+em -> 1 em , it is related to font sizr of parent mtlb parent jitna hi 
+2 em mtlb parent s double font size
+
+0.5em mtlb half of parent size font size
+
+ak ciz aue agar isma width ha to vo apne font size  k reloative hhogi
+
+rem -> hmesha apne root element k related  root element mtlb body , body m default 16 px hota ha waisw
+
+*/
+
+/*position in css
+position:static /relative /absolute /fixed /sticky
+shift hotw ah a y top right bottom left
+-->static=default position
+-->relative:element is relative to itself. top =10px khud k top s 10 px shift
+-->absolute:positioned relative to its closest positioned ancestor agar koi ancestor nhi ha to body k relative
+-->fixed:positioned relative to its browser mtlb hmesha body k relTIVE aur y fix rhhega scroll pa
+-->sticky:positioned based on user scroll position , apni position pa aakwstck ho jaega
+*/
+
+/*z index = kiskie upar konsa elemennt aaega
+defaultt m jo badme likhoge vo pjle aaega
+defaullyt z-index:0
+
+jiska jitna jjyada +ve z index vo utna upar 
+it can be -ve , 0 , +ve
+
+static position m z inndex nhi kr skte na hi top bottom wgera 
+
+
+*/
+
+/*
+
+background-image: url("    ")
+bakground-size :
+->cover = completey fill no empty space
+->contain : priority image puri visible hogi kuch nhi chupepega
+->auto : defult 
+
+*/

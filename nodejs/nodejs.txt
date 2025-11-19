@@ -1,0 +1,44 @@
+REPL = read evaluate PRINT LOOP
+
+to run with node = node script.js
+
+process = the object provide information about and control over the current nodejs process
+process.argv = return an array containg the commandline argumnt passed when nodejs project 
+was launched
+
+modulees.export
+
+require() = a built in function to include external modules that exist in a seperate file 
+module.exports = a special objects
+
+REQUIRING DIRECTORIES - 
+hme aagar pura folder lana ho use m jaise ak folder ha uske andar bhot sari files ha 
+aur hme pure folder ko export krna ha to 
+usma ak nyi file create kro aur usma sari impor kr log jaise ki 
+
+fruits / index.js 
+const apple = require("./apple");
+const banana = require("./banana");
+const orange = require("./orange");
+
+let fruits = [apple , banana , orange];
+module.exports = fruits;
+
+script.js
+
+ab jis file m chiye y usa require krlo
+
+npm - node package manager
+.library of packages of code
+.command line tool for acess
+
+installing packages - 
+npm install name
+to install globally
+npm install -g name
+
+-> node_modules = the node modules folder contain every installed dependency for project
+-> package-lock.json = it record exact version of every installed dependency , including its 
+ sub sdependencies and versions 
+ 
+

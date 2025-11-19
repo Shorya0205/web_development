@@ -1,0 +1,69 @@
+/* h1 { color :red;} here h1 is selector and color is the property and  red is the value */
+
+h1 {
+/* color =  is to set the -foreground- , like text ,link ,button text  */
+    color : red;
+/* background -color =  is to set the -background- ,like div background ,body background ,button background  */
+    background-color: black;
+}
+
+body{
+     background-color: rgb(73, 130, 127); 
+}
+/* type of selectors
+1. universal = * {       }                --> it has low priority
+
+2. element = h1 {        }
+
+3. id selector = #idname {       }        -->when we want to set same properties to the same elements like
+only heading 
+
+4. class selector = .myclass {        }   -->when we want to set same properties to the multiple elements
+like para , heading , button
+
+*/
+button {
+    background-color: black;
+    color: aliceblue;
+}
+
+#one {
+    color:rgb(192, 29, 146);
+}
+
+.myclass{
+    color:rgb(134, 85, 85);
+}
+/*type of text properties
+
+1. text-align : left / right / center  --> works according to the parent tag
+ 
+2. text-decoration : underline / overline / linethrough /none ->  can have special attributes like dotted/ dashed
+
+3.font weight :100-900/normal/bold/bolder/lighter bold is at 400
+
+4.font faimly : style of font
+
+5.text-transform : uppercase / lowercase / capitalize / none
+
+6.line-height :px
+
+*/
+
+p{
+    color :rgb(103, 49, 49);
+    background-color: aliceblue;
+    text-align: center;
+    text-decoration: line-through dotted;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 40px;
+    text-transform: uppercase;
+
+}
+
+/* units in the text 
+
+1. absolute -> pixel ->= 96px = 1 inch = 2.54cm   */
+
+/*                 */

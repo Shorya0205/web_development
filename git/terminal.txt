@@ -1,0 +1,42 @@
+Terminal knowledge - 
+
+Command line , terminal , console , shell , bash , z-shell . these terms can be used interchageably
+
+1. shell     - a programm running in terminal
+2. console   - a command line interface used to work with your computer
+3. Z - shell - another shell
+
+
+-> git --version = git ka version konsa ha janne k lie
+-> ls = usma sari folder aur directory ki list
+-> pwd = print working directory
+
+cd relative path
+cd absolute path 
+
+
+to move back - cd..
+jyada peeche jane k lie - cd../..
+/ root directory
+~ home directory
+
+to make new directory = mkdir name
+mkdir path/name
+
+manuals-
+man ls - give info about ls command
+man mkdir - give info about mkdir command
+
+agar hme ls m jyada info chaiye to unhe with flag likho
+ls -l
+ls -a
+ls -la
+
+touch -> to create new files
+touch filename
+
+deleteing files
+
+rm - remove files
+rmdir - remove empty folders
+rm -rf - remove any folder by force

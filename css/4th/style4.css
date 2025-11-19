@@ -1,0 +1,114 @@
+/*media queries
+
+@media(width:600px){
+div{
+background-color:red}}
+
+jb width 600px to sare div red ho jaenge , y exactly 600 pa hi hoga na hi jyada na hi kam
+
+@media(min-width:600px){
+div{
+background-color:red}}
+
+jb width 600px ha ya uuse jyada to sare div red ho jaenge 
+
+@media(min-width:600px) and (max width :300px){
+div{
+background-color:red}}
+
+300 s 600 k bich m red ho jaega
+
+*/
+
+/* animations transitions
+
+
+
+div:hover{
+background-color:red;
+colorwhiite;}
+
+active=click krke hold krna
+
+div:active{
+background-color:red;
+colorwhiite;}
+
+transitions --
+
+transition-property : property you want to transiyion
+
+div ko de diya transition prperty :all
+
+transition-duration: 2ms/ 3ms
+
+div ko bta diya kitna time le karne m 
+
+transition-timiing-function:ease in / ease out /linear/steps
+
+kis style  m ho y bsa styl ha kase ho i
+
+transition-delay:2s/4ms
+
+kitne time bad chlega
+
+shorthand
+transition:proprty name duration ease-in-out delay
+transition:font-size 2s ease-in-out 0.2s ;
+
+
+transform-- PURE PA APPLY HOTI HA BOOX AUR USKE ANADAR KA CONTENT DONO
+used to apply 2d and 3d transformation to an element
+
+.rotate-
+transform: rotate(45deg);
+
+rotate:45deg
+rotate: X 45deg
+rotate: Y 45deg
+rotate: Z 45deg
+
+.SCALE: bda ya chota krna 
+
+transform:scale(2);  x y dono k about
+transform:scale(0.5);
+tramsform:scale(1,2); x k along utna hi y k along dugna
+
+transform:scale x(0.5)
+
+.translate screen pa kisi ko move krana x a y axis m 
+
+transform:translate(20px);
+transform:translate(20px,50px);
+
+transform:translateX(20px);
+transform:translateY(20px);
+
+.SKEW : MIXTURE OF DIFFENT EFFECT , TEDHA KRNA 
+TRANSFORM:SKEW(30DEG)
+
+aminations---to animate css element better way to transform 
+
+@key frame myname {
+from {font-size:30px;}     starting frame 
+to {font-size:60px;}   }    ending frame
+
+phla aase frames bna lo phir apni animation apply kro
+
+animation properties
+-animation-name: myname  y vo frame ka nam ha jo use krn ha iiskio div wgera m dal do ab vo kam krega
+-animation-duration
+-animation-timing-function
+-animation-delay
+-animation-iteration-count
+-animation-direction : normal / reverse/alternate
+
+shorthnd
+animmation: myname 2s(duration) linear(timingfn) 3s(delay) infinite(iteration) normal(direction)
+
+%in animation
+
+@keyframe myname {
+0% {font-size :20px}
+50% {font-size :100px}
+100% {font-size :200px}}

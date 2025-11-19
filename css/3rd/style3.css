@@ -1,0 +1,145 @@
+/*
+flexbox -} it is a one dim. layout method for arranging items in rows or column
+
+flex model - 
+
+flex container - it can br div span navbar 
+flex container m display:flex
+
+
+ab hm sare chheze do direction m dekhenge 
+horizonatal is main axis
+verticall is cross axis
+by default
+
+inke andar flex items hote ha 
+sare fle item isi k andar rehenge chahe apna size cmprommise krna pde
+
+*/
+
+/*
+flexbox direction -} it sets how flex items are placed in the flex container along which axis and direction
+
+-flexbox-direction:
+->row   (default) 
+->row-reverse
+->column
+->column-reverse
+
+
+*/
+
+/*
+flex properties for flex container 
+-]justify-content: alignment along the main axis
+flex-start/flex-end//centre/space-evenly
+
+-]flex-wrap: nowrap / wrap /wrap-reverse
+flex-wrap controls whether flex items stay in one line or wrap to multiple lines when they 
+don't fit in the container.
+1. nowrap (default)
+All items stay in one line
+Items shrink to fit the container
+2. wrap
+Items wrap to next line when they don't fit
+New lines are created below (for row) or to the right (for column)
+3. wrap-reverse
+Items wrap to multiple lines
+New lines are created above (for row) or to the left (for column)
+
+-]align-items:alignment along cross axis
+Important: Only works when flex-wrap: wrap is used and there are multiple lines.
+1. stretch (default)
+Items stretch to fill the container's height/width
+2. flex-start
+Items align at the start of cross axis
+3. flex-end
+Items align at the end of cross axis
+4. center
+Items align at the center of cross axis
+5. baseline
+Items align along their text baseline
+-]align-content:alignment of space between and around the content
+1. stretch (default)
+Lines stretch to fill the available space
+2. flex-start
+Lines pack at the start of the container
+3. flex-end
+Lines pack at the end of the container
+4. center
+Lines pack at the center of the container
+5. space-between
+First line at start, last line at end, equal space between lines
+6. space-around
+Equal space around each line (half space at edges)
+7. space-evenly
+Equal space between and around all lines
+*/
+
+/*
+flex properties for flex items also for single item
+inki priority jyada hoti ha
+
+1.align-self : alignment of individual along the cross axis
+2.flex grow:how much a flex item will grow relative to the rest of the flex items if space vailable
+3.flex-shrink:how much a flex item will shrink relative to the rest of space available
+jaise agar hm kisi eement ko jyada shrink ya grow krana chhe { default is 1 }
+hm ise  0.5 bhi kr skte ha aur ++ve bhi agar constant rkhna ha to 0
+*/
+
+/*
+
+*/
+#caption{
+    font-size: 200 px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#outer{
+    border: 2px solid black;
+    width: 900px;
+    height:1000px;
+    margin-left: 300px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    align-content: flex-start;
+    
+}
+
+div{
+    border: 2px solid black;
+    width: 200px;
+    height:200px;
+    display: inline-block;
+    text-align: center;
+}
+
+#b1{
+    background-color: aqua;
+    height: 300px;
+    flex-shrink: 2;
+}
+
+#b2{
+    background-color: pink;
+}
+
+#b3{
+    background-color: yellowgreen;
+    height: 300px;
+}
+
+#b4{
+    background-color: brown;
+}
+
+#b5{
+    background-color: blueviolet;
+    height: 100px;
+}

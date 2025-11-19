@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    border:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav{
+    height:60px;
+    background-color: #131A22;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+#bottomnav{
+    height:40px;
+    background-color: #37475A;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    color:white;
+    gap: 16px; 
+}
+
+#logo{
+    height:50px;
+    width:100px;
+    
+}
+
+.border{
+    border:2px solid transparent;
+    
+}
+
+.border:hover{
+    border:2px solid white;
+}
+
+#adress{
+    color:white;
+ 
+}
+
+#searchicon{
+    width: 65px;
+    height: 42px;
+    background-color: #FEBD69;
+    text-align: center;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+
+}
+
+
+
+input{
+    width: 700px;
+    height: 40px;
+    font-size: larger;
+}
+
+select{
+    width: 65px;
+    height: 44px;
+    font-size: small;
+    text-align: center;
+    background-color: rgb(231, 221, 221);
+}
+
+#search{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+#signin{
+    color: white;
+}
+
+.small{
+    font-size: smaller;
+}
+
+#returns{
+    color: white;
+}
+#carticon{
+    color :white;
+    font-size: larger;
+}
+
+#cart{
+    color: white;
+}
+
+#ops1{
+   font-size: larger; 
+}
+
+/*heroo section*/
+
+.herosection{
+    background-image:url("hero.jpg");
+    height: 400px;
+    background-size: cover;;
+}
+
+.box{
+    border:2px solid black;
+    width:350px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    
+}
+.shopsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    
+}
+
+.box1{
+    display:flex;
+    flex-wrap: wrap;
+}

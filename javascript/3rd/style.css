@@ -1,0 +1,18 @@
+h1{
+    color:blue;
+    background-color: pink;
+}
+
+body {
+    background-color: pink;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    width: 400px;
+}
+
+.head{
+    background-color: aqua;
+}
